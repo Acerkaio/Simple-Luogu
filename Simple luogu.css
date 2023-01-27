@@ -1,5 +1,38 @@
+/* ==UserStyle==
+@name         Smart - Luogu 精简版
+@version      20220824.00.28
+@namespace    userstyles.world/user/acerkaio
+@description  Smart - Luogu 精简版，体验版
+@author       acerkaio
+@license      No License
+==/UserStyle== */
+
+@-moz-document regexp("https://www.luogu(.org|.com.cn)/(?!blog).*") {
 /*SL lite*/
 @keyframes showapp{0%{opacity:0;}}
+/*滚动条*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent; 
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 12px;
+  background-color: #6C63F0;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  width: 12px;
+  background-color: #6C63F0;
+  -webkit-border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:vertical:hover,::-webkit-scrollbar-thumb:horizontal:hover
+{
+  background-color: #405DF9;
+}
 /*-----------背景----------*/
 html > body{
     background: url(https://pic.imgdb.cn/item/6301896a16f2c2beb1299954.jpg);
@@ -167,6 +200,8 @@ a,
     margin-right:10px !important;
 }
 /*tag & badge*/
+.lfe-caption.tag,
+.lfe-caption[data-v-43a42535][data-v-0c66dd62],
 .am-badge,
 .exlg-badge,
 .difficulty > .color-default{
@@ -211,8 +246,31 @@ a,
 .message-block > .message[data-v-5c0627c6]::after{
         display:none;
 }
+/*exlg-window*/
+#exlg-dash-window {
+    background-color:#ffffffeb !important;
+}
+/*searchAnywhere*/
+.searchAnywhere{
+    -webkit-backdrop-filter: blur(14px) !important;
+    backdrop-filter: blur(14px) !important;
+    
+}
+.searchAnywhereCloseSettings{
+    transition: all .3s ease;
+}
+.searchAnywhereCloseSettings:hover {
+    width:35px;
+    height:35px;
+}
+.searchAnywhereSettingsLink:hover {
+    transition: all .5s ease;
+    transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+    }
 /*503.card.max*/
 .card.max{
     background-image: url('gg1.svg') !important;
     background-repeat: no-repeat !important;
+}
 }

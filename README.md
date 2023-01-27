@@ -4,7 +4,7 @@
 
 [Watch in userstyles.world](https://userstyles.world/style/6062/simple-luogu-smart-luogu)
 
-更新日志：
+## 更新日志：
 
 #### 版本： 1.00 （Simple - Luogu 第一个正式版本）
 主要改动：

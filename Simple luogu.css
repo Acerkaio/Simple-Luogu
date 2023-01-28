@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Smart - Luogu 精简版
-@version      1.0.4
+@version      1.0.5
 @namespace    userstyles.world/user/acerkaio
 @description  Smart - Luogu 精简版，体验版
 @author       acerkaio
@@ -9,6 +9,13 @@
 
 @-moz-document regexp("https://www.luogu(.org|.com.cn)/(?!blog).*") {
 /*SL lite*/
+/*-字体-*/
+@font-face {
+    font-family: "Ubuntu-Mono";
+    src: url(https://www.acerkaio.top/tff/Ubuntu-Mono.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 @keyframes showapp{0%{opacity:0;}}
 /*滚动条*/
 ::-webkit-scrollbar {
@@ -102,12 +109,14 @@ html > body{
     width:11em;
 }
 /*-----------头像----------*/
-.center > .am-comment-avatar{
+.center > .am-comment-avatar,
+.searchUserCardImg{
     border:0 !important;
     transition: all .5s ease;
     box-shadow: 0 7px 30px rgba(0, 0, 0, .5) !important;
 }
-.center > .am-comment-avatar:hover{
+.center > .am-comment-avatar:hover,
+.searchUserCardImg:hover{
     transform:translateY(-1px);
     box-shadow: 0 7px 30px rgba(0, 0, 0, .6) !important;
 }
@@ -168,9 +177,22 @@ a,
     border:0;
     box-shadow: 0 7px 30px rgba(0, 0, 0, .21) !important;
 }
+.inner-card,
+.drop[data-v-01cd4e24],
+.discuss{
+    border-radius:7px;
+    transition:all .2s ease;
+    border:0;
+    box-shadow: 0 3px 17px rgba(0, 0, 0, .19) !important;
+}
 .lg-index-contest:hover,
 .am-panel-success:hover{
     box-shadow: 0 8px 40px rgba(0, 0, 0, .29) !important;
+}
+.inner-card:hover,
+.drop[data-v-01cd4e24]:hover,
+.discuss:hover{
+    box-shadow: 0 3px 23px rgba(0, 0, 0, .24) !important;
 }
 /*----button & input box---*/
 .am-btn,
@@ -179,7 +201,8 @@ a,
 .am-form-field,
 .exlg-rand-settings,
 #feed-content,
-.lfe-form-sz-small
+.lfe-form-sz-small,
+.problemTagInfo
 {
     border:0;
     border-radius:7px !important;
@@ -193,7 +216,8 @@ a,
 .am-form-field:hover,
 .exlg-rand-settings:hover,
 #feed-content:hover,
-.lfe-form-sz-small:hover{
+.lfe-form-sz-small:hover,
+.problemTagInfo:hover{
     box-shadow: 0 7px 20px rgba(0, 0, 0, .27);
 }
 .copy-btn.lfe-form-sz-middle{
@@ -252,6 +276,7 @@ a,
 }
 /*searchAnywhere*/
 .searchAnywhere{
+    background-color: #0000006e;
     -webkit-backdrop-filter: blur(14px) !important;
     backdrop-filter: blur(14px) !important;
     
@@ -267,7 +292,27 @@ a,
     transition: all .5s ease;
     transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
-    }
+}
+.searchAnywhereClicky div{
+    transition: .25s ease-out;
+}
+.searchAnywhereSettingsBag{
+    color: #edf4ff;
+    font-weight: 600;
+}
+.falseBlock > svg > path{
+    fill:#405DF9;
+}
+.trueBlock > svg > path{
+    fill: #6C63F0;
+}
+.inputAreaSmall.withContent > input {
+    background: #6c63f02e;
+    border: 2px solid #405DF9;
+}
+.searchCard {
+    font-weight: 600;
+}
 /*503.card.max*/
 .card.max{
     background-image: url('gg1.svg') !important;

@@ -1,4 +1,4 @@
-# Simple-Luogu
+# [Simple-Luogu](https://github.com/Acerkaio/Simple-Luogu/blob/main/Simple%20luogu.css)
 这是 Simple-Luogu 的 Github 页面
 很遗憾，由于 stylus 暂时无法使用 Github 登录（作者的号使用的Github，且作者十分懒惰），使得更新缓慢，以后将在Github上进行更新（稍微慢一些）。
 

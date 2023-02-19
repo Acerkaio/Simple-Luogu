@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Smart - Luogu 精简版
-@version      1.0.6
+@version      1.0.7
 @namespace    userstyles.world/user/acerkaio
 @description  Smart - Luogu 精简版，体验版
 @author       acerkaio
@@ -150,7 +150,7 @@ header.am-comment-hd{
 /*a*/
 a,
 .item{
-    transition:all .3s ease-out;
+    transition:all .1s ease-out;
 }
 /*card*/
 .lg-article,
@@ -211,7 +211,7 @@ a,
 {
     border:0;
     border-radius:7px !important;
-    transition:all .3s ease-out;
+    transition:all .2s ease-in-out;
     box-shadow: 0 7px 20px rgba(0, 0, 0, .37) ;
     font-weight:bolder !important;
 }
@@ -322,5 +322,40 @@ a,
 .card.max{
     background-image: url('gg1.svg') !important;
     background-repeat: no-repeat !important;
+}
+/*主页广告进度球*/
+.am-slider-default .am-control-nav li a.am-active{
+    background-color: #405DF9 !important;
+    margin-left: -3.5px !important;
+    width: 15px
+}
+.lg-index-benben div:nth-of-type(4) {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+.feed-selector > a {
+    
+    color:#405DF9;
+}
+.am-nav>li>a {
+    
+    padding: .7em 1.2em;
+    border-radius:7px;
+    
+}
+.feed-selector {
+    background-color: #fff;
+    border-radius:7px;
+    
+}
+.am-nav>li.am-active>a, .am-nav>li.am-active>a:focus, .am-nav>li.am-active>a:hover {
+    
+    font-weight: bold;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, .33);
+    color: #fff;
+    background-color: #6C63F0;
+    cursor: default;
 }
 }
